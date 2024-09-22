@@ -18,21 +18,139 @@
                 <h2 id="headercontent" style="margin:20px;display:inline-block">Digital Age Learning</h2>
                 <button style="margin:20px;float:right;display:inline" onclick="headerchange(true)">-></button>
             </div>
-            <div>
+            <div id="reflectioncontent">
+                <p id="reflectionp1">
+                    The advancement of the information age brought about the need for digital literacy which, as coined by Paul Gilster, is “the ability to use digital tools and technology to access, evaluate and create information”. This information can be further used for communicating, creating and solving problems. Digital literacy not only encompasses tools that are relevant for one’s academic journey, but is useful in the context of our daily lives too. The ability to manage one’s privacy and security settings to minimize digital footprint, using ChatGPT as a tool for research, using MS Excel for managing budgets and more. All of these are examples of digital literacy and skills that have become increasingly more important with the coming of the information age.
+                </p>
+                <p id="reflectionp2">
+                    The process of learning has undergone vast changes with the coming of the digital age. On one hand learning has become very accessible and personalized. People have very easy access to an abundance of knowledge on virtually any topic. On top of that, learning has become a very personalized process. You can choose the medium through which you learn (audio, visual, textual, etc.) and also control the pace at which you learn. However, on the other hand, this abundance of knowledge has also created problems. We now have to be able to discern between misinformation and information that is useful to us. We must ask ourselves which  sources are considered valid before we take any information at face value. In addition to that, we are now also presented with a lot more distraction than were ever present before. We need to manage the distractions around us by ensuring that the environment you’re studying under is free of any such interferences. Tools such as website blockers, time management apps, browser extensions for productivity, etc. are great for creating a learning environment free of distractions.
+                </p>
+                <p id="reflectionp3">
+                    To further enhance your learning process, you should know what best helps foster learning for you. You might find that you learn better in a group study setting. Maybe graphical representations such as mind maps help you remember information better than simply taking down notes. Whatever it is, investing to know yourself better by asking these questions will help optimize your learning process. Setting goals for your learning is another method to improve your motivation to learn. Setting goals can also help give your learning a direction to work towards.
+                </p>
+                <p style="display:none;" id="reflectionp4">
 
+                </p>
+                <p style="display:none;" id="reflectionp5">
+
+                </p>
+                <p style="display:none;" id="reflectionp6">
+
+                </p>
+                <p style="display:none;" id="reflectionp7">
+
+                </p>
+                <p style="display:none;" id="reflectionp8">
+
+                </p>
+                <h3>Person Reflection-</h3>
+                <p id="personalreflection">
+                    Every school teaches you traditional literacy, however, as far as I’ve seen, digital literacy is barely touched upon. This isn’t to say that traditional literacy isn’t crucial but I do believe that traditional literacy just isn’t enough in this changing world. Knowledge about digital literacy can completely change how effectively and efficiently one can learn and I think that everyone should try to personalize their learning process and take advantage of technology as a learning tool. I also think that learning isn’t only something that’s done within schools and colleges, but it’s a lifelong process. Digital literacy, along with traditional literacy, can greatly benefit one’s learning process, hence, these are skills I believe are worth investing in. This course made me realize the importance of a learning environment free of distractions, hence, I’ve looked into some chrome extensions 
+                </p>
             </div>
         </div>
         <script>
             var headerind = 0;
             var headcont = document.getElementById("headercontent");
+            var p1 = document.getElementById("reflectionp1");
+            var p2 = document.getElementById("reflectionp2");
+            var p3 = document.getElementById("reflectionp3");
+            var p4 = document.getElementById("reflectionp4");
+            var p5 = document.getElementById("reflectionp5");
+            var p6 = document.getElementById("reflectionp6");
+            var p7 = document.getElementById("reflectionp7");
+            var p8 = document.getElementById("reflectionp8");
+            var pr = document.getElementById("personalreflection");
+            var headparas = [
+                "The advancement of the information age brought about the need for digital literacy which, as coined by Paul Gilster, is 'the ability to use digital tools and technology to access, evaluate and create information'. This information can be further used for communicating, creating and solving problems. Digital literacy not only encompasses tools that are relevant for one’s academic journey, but is useful in the context of our daily lives too. The ability to manage one’s privacy and security settings to minimize digital footprint, using ChatGPT as a tool for research, using MS Excel for managing budgets and more. All of these are examples of digital literacy and skills that have become increasingly more important with the coming of the information age.",
+                "The process of learning has undergone vast changes with the coming of the digital age. On one hand learning has become very accessible and personalized. People have very easy access to an abundance of knowledge on virtually any topic. On top of that, learning has become a very personalized process. You can choose the medium through which you learn (audio, visual, textual, etc.) and also control the pace at which you learn. However, on the other hand, this abundance of knowledge has also created problems. We now have to be able to discern between misinformation and information that is useful to us. We must ask ourselves which  sources are considered valid before we take any information at face value. In addition to that, we are now also presented with a lot more distraction than were ever present before. We need to manage the distractions around us by ensuring that the environment you’re studying under is free of any such interferences. Tools such as website blockers, time management apps, browser extensions for productivity, etc. are great for creating a learning environment free of distractions.",
+                "To further enhance your learning process, you should know what best helps foster learning for you. You might find that you learn better in a group study setting. Maybe graphical representations such as mind maps help you remember information better than simply taking down notes. Whatever it is, investing to know yourself better by asking these questions will help optimize your learning process. Setting goals for your learning is another method to improve your motivation to learn. Setting goals can also help give your learning a direction to work towards. I also think that learning isn’t only something that’s done within schools and colleges, but it’s a lifelong process. Digital literacy, along with traditional literacy, can greatly benefit one’s learning process, hence, these are skills I believe are worth investing in. This course made me realize the importance of a learning environment free of distractions, hence, I’ve looked into some chrome extensions",
+                "Every school teaches you traditional literacy, however, as far as I’ve seen, digital literacy is barely touched upon. This isn’t to say that traditional literacy isn’t crucial but I do believe that traditional literacy just isn’t enough in this changing world. Knowledge about digital literacy can completely change how effectively and efficiently one can learn and I think that everyone should try to personalize their learning process and take advantage of technology as a learning tool.",
+                "Artificial Intelligence is used virtually everywhere and its rapid advancement seems to have sparked concern among the public, however, the majority don’t even know what Artificial intelligence really is. AI can be thought of as an algorithm that takes an array of inputs to process and creates an output depending on it. For example, recommender systems take the user's behavioral data as the input and make recommendations for the users as the output. These recommender systems are central to social media platforms such as youtube or instagram which create a personalized feed for their users as a way to increase retention. ",
+                "The Algorithm that actually processes the inputs for systems like a recommender system is trained using machine learning. There are 3 types of machine learning- Supervised, Unsupervised and Reinforcement. Supervised machine learning makes use of paired inputs and outputs. The inputs are labeled to help the AI understand the correlation between the input and output. Unsupervised machine learning is similar, however, the inputs aren’t labeled, hence, the machine identifies patterns between the input and output itself. Reinforced machine learning is a trial and error process where the machine learns to map the input to the output through a reward and penalty system. A recommender system might use reinforcement learning by taking a user’s review for the content it has recommended to them. If the user rates the content highly then the AI is incentivized to give similar recommendations in the future.",
+                "Neural networks are a more complicated algorithm which simulates how a human brain works with the use of interlinked nodes. Data from the input layers is processed in the hidden layers where nodes with different weightage depending on their importance process the data before it moves down the network and finally reaches output layers. Deep learning is an even more complicated type of neural network with the use of multiple hidden layers that process information. Deep learning algorithms can analyze even unstructured data.",
+                "AI can mimic human intelligence and is categorized based on how intelligent it is compared to a human. A weak AI can only perform tasks for which it is preprogrammed. General AI is more intelligent, being able to perfectly imitate human intelligence and doing everything a human can, including the capacity to learn. It is, however, worth noting that the existence of an AGI is still hypothetical. Beyond the AGI is the super AI which goes far beyond human intelligence and which is also the main fear of the general crowd. Yet, even with the development of generative AI such as ChatGPT, our current AI development still falls within the bounds of Weak AI. Whether AGI and ASI even exist is debated and, if they do, then the development of such a powerful AI would likely take decades to come, hence, the current panic of the public is unfounded.",
+                "For context, Generative AI is a type of AI that specializes in generating content through finding patterns in existing data. Take this as an example- A generative AI could be trained by giving it data in the form of existing artworks. This AI would then process the data to identify patterns and structures that allow it to accurately generate new artworks given a prompt as the input. This is also an example of how generative AI can transform the mode of output from the input since it can take in a textual prompt for its input and produce a visual artwork as the output. ChatGPT also falls under the category of generative AI with the transformer model at its core. The transformer model is a powerful natural language processing tool which helps ChatGPT process text and generate human-like responses by understanding the relation between words and predicting the next word that comes in a sentence. ChatGPT is an example of a weak AI since it doesn’t actually have an understanding of the information it displays as it solely relies on the pattern between words to generate a response. It also lacks the ability to learn in real time.",
+                "AI isn’t a new concept. The idea of intelligence in machines existed all the way back in 1950 with the creation of the Turing test which aimed to test how indistinguishable machine responses were to a human’s. The abundance of data as a consequence of the information age and the improvement in computing power has led to a sudden spike in the advancement of AI and AI research in recent times which has led to intelligent AI that can even pass the Turing test. This sudden development has also, however, led to ethical issues relevant to Artificial Intelligence. The rise of deepfake has had great social consequences, concerning even the law as it gets hard to discern between what’s fake and what’s real. AI systems should be created within the context of preserving society in mind by following certain guidelines. AI systems should be unbiased, traceable, explainable and secure.",
+                "",
+                "An important aspect of being digitally literate is knowing how to safeguard yourself against the risks that come from having an online presence. Your data has immense value in the information age, whether it be for companies to target you with their advertisements or for scammers who want access to your personal data to steal from you. Many people on the internet are unaware of these risks and, unfortunately, fall victim to digital threats and attacks. While there isn’t just a magic spell that can simply protect you from these risks, there are still things you CAN do to minimize your chances of being targeted.",
+                "Your digital footprint refers to the residual data that you leave behind as a result of your online activities and actions. For example, any sites you visit or searches you make online can all be traced back to you. Digital footprint isn’t necessarily a bad thing as it could allow you to personalize your web experience or even help you network and socialize with others, whether this be in a personal or professional setting. The majority of your digital footprint is, however, mainly used against you. Companies use this residual data to accurately profile you based on your digital footprint and target you with advertisements. It is also virtually impossible to tell where your data might end up on the internet which is why leaving behind personal or sensitive data about you in the form of your digital footprint could be catastrophic since, if in the wrong hands, it can be a precursor to crimes such as robbery, blackmail, etc. ",
+                "A large chunk of the digital footprint you leave behind is stored using cookies. Digital cookies refer to a small file placed on your browser which stores information such as the websites you visit. Cookies have a good use as they help websites remember which is also what maintains a log-in session. They help personalize your experience by allowing websites to remember your preference which, for example, in the context of online shopping make it easier for you to find the products you’re looking for. While the use of cookies has a beneficial utility, they also generate a massive digital footprint. There are likely thousands of cookies on your device currently as a result of simply browsing the internet, some of which are even linked with your transactions. The existence of digital footprints result in a huge loss of privacy as many people aren’t aware how their data is being used or who has access to what data. Employers have also started seeking information about your online activity for a background check which might be information you’d rather want private.",
+                "Aside from your digital footprint, data breaches are another major threat that concern you and your data. The systems that you choose to store your personal information in can have great consequences as a cyberattack on that system which leads to a data leak can put you at risk. Personal information such as your passwords, usernames, emails, location, etc. can all be revealed in the case of such an event. Ensuring that the systems you use have powerful security measures is important.",
+                "Malwares are also threats that, in general, harm your devices are another risk to your data. Malwares are categorized in different types based on how they work. Virus- A virus is a type of malware that inserts copies of itself into applications. They can spread throughout a network or even storage systems. Viruses can lead to major data loss throughout your system. Worm- A worm is a standalone application that can self-replicate much like a virus. They can take up a system’s resources and slow the -of the system down till the functioning stops. Trojan- A trojan malware disguises itself as a legitimate application and tricks the user into downloading the malware onto their device. It could then damage your device or steal your information depending on how it’s programmed. A trojan is also an example of a non-replicating malware. Adware- An adware is a type of malware that displays unwanted advertisements on your device screen as pop ups. Spyware- A spyware is a type of malware that secretly collects your data and repeatedly attempts to access sensitive information on your device. This data is then sent to third parties who generally have malicious intent.",
+                "An online threat outside of malicious softwares are phishing attacks. Phishing is another common form of attack that attempts to steal your sensitive data. Phishing attacks make use of fraudulent emails or websites to deceive the user into giving over access to their information. Spam is the use of digital communication to send messages/emails in bulk to multiple recipients. Phishing attacks and most malwares make use of spam to make their way on people’s devices.",
+                "Having discussed everything, it’s become evident that regulating one’s digital footprint has become crucial for keeping oneself safe. The existence of privacy settings is a great way to start regulating your digital footprint. Being mindful of application permissions, ISP permissions and what cookies you enable are simple habits that can greatly cut down the digital footprint you leave behind. In addition, it isn’t enough to simply set your social media account as private, one should also be more concerned with what they actually choose to share on the internet and on which platforms. These practices can only, however, reduce the digital footprint you create. It is worth noting that residual data and data leaks cannot be completely erased, only minimized.",
+                "The same goes for online safety. It isn’t possible to be completely secure while being on the internet as even governments can experience data breaches. Safety practices do, however, minimize the risk of loss as a result of online threats. Maintaining your password is the most basic practice. Create a unique and complex password that you can remember. Avoid using the same password on multiple systems and make sure to change them regularly. Two step authentication is a step further in terms of security which, along with your password, requires another factor for identity verification such as an OTP. One should also be careful of fraudulent emails and websites- carefully verify the credentials of the sender and only click on “https://” links which utilize encryption compared to the basic “http://”. Untrustworthy links or sources for downloading in general should be avoided as they could directly lead to your system being infected.  Anti-virus and anti-spyware can also catch malwares from infecting your devices, hence, these are crucial for safely browsing the internet. Lastly, it is up to you to use your rational and critical thinking to not fall victim to scams such as the phishing attack.",
+                "According to me, Cybersecurity is always in conflict with user convenience. It takes effort to keep up with practices to safeguard yourself, which is why many people end up neglecting them. However, digital hygiene isn’t just a one-off thing, but more like a set of practices that’s relevant for as long as the information age lasts. Data and information is essentially as important as money, hence, one needs to do all they can to protect themselves from thieves who want to make a profit at your expense. I, personally, have learned a few important practices myself from this course, such as how to minimize my own digital footprint as well as checking for any recent data breaches. I was shocked to learn from “https://haveibeenpwned.com/” that my password and email had both been leaked in a data breach years ago. Learning from this, I will be making it a point to regularly check the vulnerability of my data and implementing practices to ensure I’m protected from any online threats.",
+            ]
             var headers = ["Digital Age Learning", "AI Tools", "Online Safety and Security", "HTML and CSS", "Excel"]
             function headerchange(change) {
-                if (change && headerind != 7) {
+                if (change && headerind != 4) {
                     headerind++;
-                    headcont.innerHTML = headers[headerind];
                 } else if(!change && headerind !=0) {
                     headerind--;
-                    headcont.innerHTML = headers[headerind];
+                }
+                headcont.innerHTML = headers[headerind];
+                if(headerind == 0) {
+                    p1.style.display= "block";
+                    p2.style.display= "block";
+                    p3.style.display= "block";
+                    p4.style.display= "none";
+                    p4.style.display= "none";
+                    p5.style.display= "none";
+                    p6.style.display= "none";
+                    p7.style.display= "none";
+                    p8.style.display= "none";
+                    p1.innerHTML = headparas[0];
+                    p2.innerHTML = headparas[1];
+                    p3.innerHTML = headparas[2];
+                    pr.innerHTML = headparas[3];
+                } else if(headerind == 1) {
+                    p1.style.display= "block";
+                    p2.style.display= "block";
+                    p3.style.display= "block";
+                    p4.style.display= "block";
+                    p4.style.display= "block";
+                    p5.style.display= "block";
+                    p6.style.display= "block";
+                    p7.style.display= "none";
+                    p8.style.display= "none";
+                    p1.innerHTML = headparas[4];
+                    p2.innerHTML = headparas[5];
+                    p3.innerHTML = headparas[6];
+                    p4.innerHTML = headparas[7];
+                    p5.innerHTML = headparas[8];
+                    p6.innerHTML = headparas[9];
+                    pr.innerHTML = headparas[10];
+                } else if(headerind == 2) {
+                    p1.style.display= "block";
+                    p2.style.display= "block";
+                    p3.style.display= "block";
+                    p4.style.display= "block";
+                    p4.style.display= "block";
+                    p5.style.display= "block";
+                    p6.style.display= "block";
+                    p7.style.display= "block";
+                    p8.style.display= "block";
+                    p1.innerHTML = headparas[11];
+                    p2.innerHTML = headparas[12];
+                    p3.innerHTML = headparas[13];
+                    p4.innerHTML = headparas[14];
+                    p5.innerHTML = headparas[15];
+                    p6.innerHTML = headparas[16];
+                    p7.innerHTML = headparas[17];
+                    p8.innerHTML = headparas[18];
+                    pr.innerHTML = headparas[19];
+                } else if(headerind == 0) {
+                    p1.innerHTML = headparas[0];
+                    p2.innerHTML = headparas[1];
+                    p3.innerHTML = headparas[2];
+                    p4.style.display= "none";
+                    p5.style.display= "none";
+                    p6.style.display= "none";
+                    p7.style.display= "none";
+                    p8.style.display= "none";
+                    pr.innerHTML = headparas[3];
                 }
             }
         </script>

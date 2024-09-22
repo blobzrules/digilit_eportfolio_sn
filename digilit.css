@@ -117,7 +117,7 @@ button:hover {
     float:right;
     margin-right:3%;
     box-shadow:20px 20px var(--accent);
-    height:2000px;
+    height:auto;
 }
 #reflectionsections {
     width:68%;
@@ -131,4 +131,21 @@ button:hover {
 h2 {
     color:var(--primary);
     text-shadow:2px 2px var(--accent);
+}
+#reflectioncontent p{
+    color:var(--primary);
+    text-align:justify;
+    margin:3%;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:90%;
+    height:100%;
+    background-color:var(--secondary);
+    box-shadow:10px 10px var(--accent);
+    padding:20px;
+}
+#reflectioncontent h3{
+    color:var(--secondary);
+    text-shadow:1px 1px var(--accent);
+    font-size:30px;
 }
