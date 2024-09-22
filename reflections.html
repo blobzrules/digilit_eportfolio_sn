@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="digilit.css">
+        <title>INTRODUCTION | Shreyas</title>
+    </head>
+    <body onload="slidebox()" >
+        <div class="navbar">
+            <div class="navtext">
+                <a href="applying.html"><b>APPLYING</b></a>
+                <a href="reflections.html"><b>REFLECTIONS</b></a>
+                <a href="homepage.html"><b>INTRODUCTION</b></a>
+            </div>
+        </div>
+        <div id="digilitintro">
+            <div id="displaybox">
+                <div id="reflectionsintro">
+                    <h1>Digital Literacy</h1>
+                </div>
+                <hr>
+                <div id="content">
+                    <img src="images/digitallitimage.jpg">
+                    <div id="textcontent">
+                        <p id="textpara">
+                            The Digital Literacy course teaches students about the effective use of technology, especially as a tool in an educational and an employment context. In addition, the course explores the threats relevant to the use of technology in our current age and what one can do to minimize these risks. 
+                        </p>
+                        <p>Click on the button below to take you to my reflections from this course.
+                            <a href="reflections2.html"><button>-></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var i = 0;
+            var timeinterv = 5;
+            var digilit = document.getElementById("digilitintro");
+            var current = 0;
+            var textualcontent = [
+                "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus rhoncus cursus. Donec nec tristique mi, id ultricies enim. Etiam eget quam sem. Vestibulum at nisl et augue consequat euismod vitae et orci. Praesent aliquam dui volutpat diam consequat rutrum. Etiam vitae convallis tortor. Vestibulum tempor sapien vitae cursus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum arcu vel consectetur tempus. Donec tempor lacus arcu, vel pharetra odio pulvinar ac. Sed sollicitudin ex lacinia bibendum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas aliquet felis vel consequat. Aliquam ipsum tortor, interdum a pretium vitae, condimentum et lorem. Nunc feugiat lacinia tellus sit amet consequat.",
+                "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus rhoncus cursus. Donec nec tristique mi, id ultricies enim. Etiam eget quam sem. Vestibulum at nisl et augue consequat euismod vitae et orci. Praesent aliquam dui volutpat diam consequat rutrum. Etiam vitae convallis tortor. Vestibulum tempor sapien vitae cursus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum arcu vel consectetur tempus. Donec tempor lacus arcu, vel pharetra odio pulvinar ac. Sed sollicitudin ex lacinia bibendum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas aliquet felis vel consequat. Aliquam ipsum tortor, interdum a pretium vitae, condimentum et lorem. Nunc feugiat lacinia tellus sit amet consequat.",
+                "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus rhoncus cursus. Donec nec tristique mi, id ultricies enim. Etiam eget quam sem. Vestibulum at nisl et augue consequat euismod vitae et orci. Praesent aliquam dui volutpat diam consequat rutrum. Etiam vitae convallis tortor. Vestibulum tempor sapien vitae cursus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum arcu vel consectetur tempus. Donec tempor lacus arcu, vel pharetra odio pulvinar ac. Sed sollicitudin ex lacinia bibendum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas aliquet felis vel consequat. Aliquam ipsum tortor, interdum a pretium vitae, condimentum et lorem. Nunc feugiat lacinia tellus sit amet consequat.",
+                "4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus rhoncus cursus. Donec nec tristique mi, id ultricies enim. Etiam eget quam sem. Vestibulum at nisl et augue consequat euismod vitae et orci. Praesent aliquam dui volutpat diam consequat rutrum. Etiam vitae convallis tortor. Vestibulum tempor sapien vitae cursus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum arcu vel consectetur tempus. Donec tempor lacus arcu, vel pharetra odio pulvinar ac. Sed sollicitudin ex lacinia bibendum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas aliquet felis vel consequat. Aliquam ipsum tortor, interdum a pretium vitae, condimentum et lorem. Nunc feugiat lacinia tellus sit amet consequat.",
+            ]
+            function slidebox() {
+                setTimeout(function() {
+                    digilit.style.height = 5*i + "px";
+                    i++;
+                    if (i>60 && i % 5 == 0) {
+                        timeinterv += 5;
+                    }
+                    if(i<90) {
+                        slidebox();
+                    } else {
+                        document.getElementById("displaybox").style.display = "block";
+                    }
+                }, timeinterv)
+            }
+        </script>
+    </body>
+</html> 

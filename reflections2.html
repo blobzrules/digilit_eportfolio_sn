@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="digilit.css">
+        <title>INTRODUCTION | Shreyas</title>
+    </head>
+    <body id="reflections">
+        <div class="navbar">
+            <div class="navtext">
+                <a href="applying.html"><b>APPLYING</b></a>
+                <a href="reflections.html"><b>REFLECTIONS</b></a>
+                <a href="homepage.html"><b>INTRODUCTION</b></a>
+            </div>
+        </div>
+        <div id="reflectiondiv">
+            <div id="reflectionsections">
+                <button style="margin:20px;float:left;display:inline" onclick="headerchange(false)"><-</button>
+                <h2 id="headercontent" style="margin:20px;display:inline-block">Digital Age Learning</h2>
+                <button style="margin:20px;float:right;display:inline" onclick="headerchange(true)">-></button>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <script>
+            var headerind = 0;
+            var headcont = document.getElementById("headercontent");
+            var headers = ["Digital Age Learning", "AI Tools", "Online Safety and Security", "HTML and CSS", "Excel"]
+            function headerchange(change) {
+                if (change && headerind != 7) {
+                    headerind++;
+                    headcont.innerHTML = headers[headerind];
+                } else if(!change && headerind !=0) {
+                    headerind--;
+                    headcont.innerHTML = headers[headerind];
+                }
+            }
+        </script>
+    </body> 
+</html>
